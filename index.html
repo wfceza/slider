@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <h1>KLEINE FORMATIE</h1>
+                    <h3>4-6 Muzikanten</h3>
+                    <p>Uitermate geschikt voor intieme vieringen zoals, bruiloften en verjaardagen.</p>
+                    <a href=""><p class="lastHeader">BOEK&nbsp;NU&nbsp;&#8594;</p></a>
+                    
+                    <ul>
+                        <li><span class="liSpan">&#10004;</span>Feestgarantie zonder twijfel</li>
+                        <li><span class="liSpan">&#10004;</span>Gepersonaliseerde outfits</li>
+                        <li><span class="liSpan">&#10004;</span>Verzoeknummers</li>
+                        <li><span class="liSpan">&#10006;</span>Meerdere sets</li>
+                        <li><span class="liSpan">&#10006;</span>Samba Danseressen</li>
+                    </ul>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+            </div>
+    
+            <div  style="background-color: rgb(85, 8, 85); margin-top: 20px;" class="swiper-slide">
+                <div class="middleHeader"><p class="pmiddleHeader">75% KIEST VOOR DIT PAKKET</p></div>
+                <h1>MIDDEL FORMATIE</h1>
+                <h3>7-10 Muzikanten</h3>
+                <p>Ideaal voor zakelijke evenementen, <br> Sport-evenementen en bedrijfsfeesten.</p>
+               <a href=""><p class="lastHeader">BOEK&nbsp;NU&nbsp;&#8594;</p></a>
+                    <li><span class="liSpan">&#10004;</span>100% Feest Garantie</li>
+                    <li><span class="liSpan">&#10004;</span>Niet goed, geld terug</li>
+                    <li><span class="liSpan">&#10004;</span>Gepersonaliseerde outfits</li>
+                    <li><span class="liSpan">&#10004;</span>Onbegrensde creativiteit</li>
+                    <li><span class="liSpan">&#10004;</span>Liedjes die jij wilt horen</li>
+                    <li><span class="liSpan">&#10006;</span>Meerdere sets</li>
+                    <li><span style="color: green;"  class="liSpan">&#10006;</span>Samba danseressen</li>
+                </ul>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+    
+            <div class="swiper-slide">
+                <h1>SPECIAL REQUEST</h1>
+                <h3>12+ Muzikanten</h3>
+                <p>De ultieme show, precies zoals jij het wilt! You name it, we make it happen.</p>
+                <a href=""><p class="lastHeader">BOEK&nbsp;NU&nbsp;&#8594;</p></a>
+                <ul>
+                    <li><span class="liSpan">&#10004;</span>100% Feest Garantie</li>
+                    <li><span class="liSpan">&#10004;</span>Niet goed, geld terug</li>
+                    <li><span class="liSpan">&#10004;</span>Gepersonaliseerde outfits</li>
+                    <li><span class="liSpan">&#10004;</span>Jouw wensen, onze uitdaging</li>
+                    <li><span class="liSpan">&#10004;</span>Meerdere sets</li>
+                    <li><span class="liSpan">&#10004;</span>Samba danseressen</li>
+                </ul>
+                <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> 
+            </div> 
+        </div>
+       
+    </div>
+    
+    
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+     slidesPerView: "auto",
+     slideToClickedSlide: true,
+     swiperResponsive: true,
+     swiperMode: 'adaptive',
+    
+    coverflowEffect: {
+      rotate: 1,
+      stretch: 0,
+      depth: 300,
+      modifier: 2,
+      slideShadows: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    
+    loop: true,
+
+
+  });
+
+
+
+
+
+</script>
+</body>
+</html>
