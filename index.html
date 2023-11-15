@@ -3,67 +3,814 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slide</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="./style.css">
+    <title>lol</title>
 </head>
 <body>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <h1>KLEINE FORMATIE</h1>
-                    <h3>4-6 Muzikanten</h3>
-                    <p>Uitermate geschikt voor intieme vieringen zoals, bruiloften en verjaardagen.</p>
-                    <a href=""><p class="lastHeader">BOEK&nbsp;NU&nbsp;&#8594;</p></a>
-                    
-                    <ul>
-                        <li><span class="liSpan">&#10004;</span>Feestgarantie zonder twijfel</li>
-                        <li><span class="liSpan">&#10004;</span>Gepersonaliseerde outfits</li>
-                        <li><span class="liSpan">&#10004;</span>Verzoeknummers</li>
-                        <li><span class="liSpan">&#10006;</span>Meerdere sets</li>
-                        <li><span class="liSpan">&#10006;</span>Samba Danseressen</li>
-                    </ul>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-            </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,700;1,600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,700;1,600&display=swap');
+          * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    background-color: white;
+}
+
+
+h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    }
+
+ul {
+    padding: 1px;
+    }
+
+    li {
+    padding: 4px;
+    font-size: 15px;
+    list-style: none;
+    text-align: left;
+    }
+
+    .swiper {
+    padding-top: 50px;
+    height: 1000%;
+    transition: transform 0.5s ease-in-out;
+}
+.swiper-slide {
+    width: 350px;
+    height: 620px;
+    background-color: #313131;
+    color: white;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 50px;
+}
+
+.pmiddleHeader {
+background-color:  #FFFF1C;
+height: 30px;
+padding-top: 10px;
+padding-left: 10px;
+border-radius: 20px;
+padding-bottom: 25px;
+color: black;
+margin-bottom: 10px;;
+}
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 30px;
+height: 30px;
+border-radius: 0;
+background-color: rgba(0, 0, 0, .1);
+border-radius: 10px;
+color: white;
+cursor: pointer;
+
+}
+
+.swiper-button-next, .swiper-button-prev {
+font-size: 5px;
+width: 30px;
+height: 30px;
+}
+.swiper-button-next::after {
+  content: ">";
+  font-size: 25px;
+  display: block;
+}
+
+.swiper-button-prev::after {
+  content: "<";
+  display: block;
+  font-size: 25px;
+}
+
+
+
+.liSpan {
+margin-right: 10px;
+border-style:initial;
+border-radius: 20px;
+background-color: rgba(0, 0, 0, 0.464);
+padding: 2px;
+font-size: 10px;
+}
+
+.lastHeader {
+margin-top: 10px;
+margin-left: 50px;
+margin-top: 15px;
+margin-bottom: 15px;
+padding: 15px 50px;
+background-color:#FFFF1C;
+background-image: radial-gradient(at center center, #FFFF1C 25%, #353504 100%);
+font-size: 10px;
+border-radius: 30px;
+border-style: none;
+transition: all 0.3s ease-in-out;
+}
+
+.lastHeader:hover {
+color: blue;
+transform: scale(1.2)
+}
+
+.purple {
+background-color: #4F1093;
+}
+
+
+@media (max-width: 720px) {
+    .swiper:hover {
+transform: scale(1.3)
+}
+}
+@media (min-width: 700px ) {
+    .swiper-slide {
+        width: 450px
+    }
+
+    .lastHeader {
+        margin-left: 80px;
+        padding: 15px 60px;
+        font-size: 15px;
+    }
+
+}
+
+
+@media (min-width: 800px) {
+    .swiper-slide {
+        width: 500px
+    }
+
+    .lastHeader {
+        margin-left: 100px;
+        padding: 16px 60px;
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 850px) {
+    .swiper-slide {
+        width: 520px
+    }
+
+    .lastHeader {
+        margin-left: 110px;
+        padding: 15px 60px;
+    }
+}
+
+@media (min-width: 900px) {
+    .swiper-slide {
+        width: 560px
+    }
+
+    .lastHeader {
+        margin-left: 120px;
+        padding: 15px 70px;
+    }
+}
+
+@media (min-width: 950px) {
+    .swiper-slide {
+        width: 580px
+    }
+
+    .lastHeader {
+        margin-left: 110px;
+        padding: 15px 80px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .swiper-slide {
+        width: 600px
+    }
+
+    .lastHeader {
+        margin-left: 130px;
+        padding: 15px 90px;
+    }
+}
+
+@media (min-width: 1020px) {
+    .swiper-slide {
+        width: 620px
+    }
+
+    .lastHeader {
+        margin-left: 120px;
+        padding: 15px 90px;
+    }
+}
+
+
+@media (min-width: 1040px) {
+    .swiper-slide {
+        width: 640px
+    }
+
+    .lastHeader {
+        margin-left: 130px;
+    }
+}
+
+@media (min-width: 1060px) {
+    .swiper-slide {
+        width: 660px
+    }
+
+    .lastHeader {
+        margin-left: 140px;
+    }
+}
+
+
+
+@media (min-width: 1080px) {
+    .swiper-slide {
+        width: 680px
+    }
+
+    .lastHeader {
+        margin-left: 150px;
+        padding: 15px 100px;
+    }
+}
+
+
+@media (min-width: 1100px) {
+    .swiper-slide {
+        width: 720px;
+    }
+
+    .lastHeader {
+        margin-left: 150px;
+        padding: 15px 120px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .swiper-slide {
+        width: 740px;
+    }
+
+    .lastHeader {
+        margin-left: 160px;
+        
+    }
+}
+
+
+@media (min-width: 1140px) {
+    .swiper-slide {
+        width: 760px
+    }
+
+    .lastHeader {
+        margin-left: 180px;
+    }
+}
+
+@media (min-width: 1160px) {
+    .swiper-slide {
+        width: 780px
+    }
+
+    .lastHeader {
+        margin-left: 180px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .swiper-slide {
+        width: 820px;
+    }
+
+    .lastHeader {
+        margin-left: 200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .swiper-slide {
+        width: 900px;
+    }
+
+    .lastHeader {
+        margin-left: 240px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .swiper-slide {
+        width: 1100px
+    }
+
+    .lastHeader {
+        margin-left: 320px;
+        padding: 15px 120px;
+        
+    }
+}
+
+/* The Form Section*/
+.header {
+    z-index: 999;
+}
+
+.formH2 {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-weight: lighter;
+}
+
+span {
+    display: inline-block;
+}
+
+.formP {
+    font-family: monospace;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight:normal;
+    margin-top: 30px;
     
-            <div  style="background-color: rgb(85, 8, 85); margin-top: 20px;" class="swiper-slide">
-                <div class="middleHeader"><p class="pmiddleHeader">75% KIEST VOOR DIT PAKKET</p></div>
-                <h1>MIDDEL FORMATIE</h1>
-                <h3>7-10 Muzikanten</h3>
-                <p>Ideaal voor zakelijke evenementen, <br> Sport-evenementen en bedrijfsfeesten.</p>
-               <a href=""><p class="lastHeader">BOEK&nbsp;NU&nbsp;&#8594;</p></a>
-                    <li><span class="liSpan">&#10004;</span>100% Feest Garantie</li>
-                    <li><span class="liSpan">&#10004;</span>Niet goed, geld terug</li>
-                    <li><span class="liSpan">&#10004;</span>Gepersonaliseerde outfits</li>
-                    <li><span class="liSpan">&#10004;</span>Onbegrensde creativiteit</li>
-                    <li><span class="liSpan">&#10004;</span>Liedjes die jij wilt horen</li>
-                    <li><span class="liSpan">&#10006;</span>Meerdere sets</li>
-                    <li><span style="color: green;"  class="liSpan">&#10006;</span>Samba danseressen</li>
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.536);
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.buttonClass {
+    display: inline-block;
+    margin-left: 350px;
+    margin-top: 30px;
+    padding: 25px 80px;
+    color: white;
+    background-color: #32C9D6;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    cursor: pointer;
+}
+
+input::placeholder {
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.exit-button {
+    cursor: pointer;
+    background-color: none;
+    font-size: 40px;
+    border: none;
+    background-color: white;
+    
+}
+
+
+nav {
+    display: none;
+}
+
+
+nav.menu-btn {
+    display: block;
+    
+}
+
+nav {
+position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: white;
+  height: 100vh;
+  padding: 1em;
+  width: 100%;
+  margin: none;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+    padding: 30px;
+    margin-left: -20px;
+    margin-top: -15px;
+
+}
+
+#myInput {
+    padding: 20px;
+    width: 650px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#myDropdown {
+    position: absolute;
+    border: none;
+    z-index: 1;
+    display: none;
+    list-style: none;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+#myDropdown li {
+    padding: 5px;
+    height: 100%;
+    width: 650px;
+    font-size: 20px;
+    
+}
+
+#myDropdown li:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.dropdown1 {
+    position: relative;
+    display: block;
+    padding: 30px;
+    margin-left: -20px;
+    margin-top: -45px;
+}
+
+#myInput1 {
+    padding: 25px;
+    width: 650px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#myDropdown1 {
+    position: absolute;
+    border: none;
+    z-index: 1;
+    display: none;
+    list-style: none;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+#myDropdown1 li {
+    padding: 5px;
+    height: 10px;
+    width: 650px;
+    font-size: 20px;
+
+}
+
+#myDropdown1 li:hover {
+   font-weight: bold;
+    cursor: pointer;
+}
+
+.last {
+    margin-top: -30px;
+}
+
+@media only screen and (min-width: 800px) {
+
+input {
+   margin-left: 30px;
+}
+.formH2 {
+   margin-top: 30px;
+   font-size: 60px;
+   margin-bottom: 40px;
+}
+.header {
+   height: 750px;
+   margin-top: 80px;
+   margin-left: 0px;
+}
+.naam {
+   display: inline-block;
+   width: 350px;
+   margin-right: 30px;
+}
+
+.telephone {
+   display: inline-block;
+   width: 350px;
+}
+.date {
+   display: inline-block;
+   margin-right: 30px;
+   width: 350px;
+}
+
+.email {
+   display: inline-block;
+   width: 350px;
+}
+
+#myInput {
+   display: inline-block;
+   width: 350px;
+   margin-right: 30px;
+   margin-top: -20px;
+}
+
+#myInput1{
+   display: inline-block;
+   width: 350px;
+   margin-left: -10px;
+}
+
+#myDropdown1 li {
+    height: 20px;
+}
+
+.droplistContainer {
+   display: flex;
+   margin-top: 20px;
+}
+
+.formP {
+   font-size: 20px;
+   text-align: left;
+   margin-left: 30px;
+   width: 800px;
+
+}
+
+.buttonClass {
+   margin-left: 720px;
+}
+
+.exit-button {
+   display: absolute;
+   margin-left: 40px;
+}
+
+.last {
+   width: 950px
+}
+
+}
+
+@media only screen and (min-width: 1250px) {
+    .header {
+        width: 1300px;
+    }
+
+    .formH2 {
+        margin-top: 50px;
+        font-size: 85px;
+    }
+
+    .formP {
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .exit-button {
+        position: absolute;
+        margin-left: 40px
+    }
+    
+    .naam {
+        display: inline-block;
+        width: 500px;
+        margin-right: 30px;
+    }
+
+    .telephone {
+        display: inline-block;
+        width: 500px;
+    }
+    .date {
+        display: inline-block;
+        margin-right: 30px;
+        width: 500px;
+    }
+
+    .email {
+        display: inline-block;
+        width: 500px;
+    }
+
+    #myInput {
+        display: inline-block;
+        width: 500px;
+        margin-right: 30px;
+        margin-top: -20px;
+    }
+
+    #myInput1{
+        display: inline-block;
+        width: 500px;
+        margin-left: -10px;
+    }
+
+    #myDropdown1 li {
+        height: 16px;
+    }
+
+
+
+    .last {
+        width: 1065px;
+    }
+
+    .buttonClass {
+        margin-left: 827px;
+    }
+}
+
+
+@keyframes mymove {
+  0% {
+    transform:translate(100px);
+    opacity: 0;
+  }
+  100% {
+    transform:translate(0px);
+    opacity: 1;
+  }
+}
+
+
+.header {
+    animation-name: mymove;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+ </style>
+
+<nav class="header">
+    <div class="container">
+        <h2 class="formH2">Boekings Formulier &nbsp; &nbsp; &nbsp; &nbsp; <button class="exit-button js-mobile-exit"><span>&#128473;</span></button>
+        <p class="formP">
+            Vul het onderstaande formulier in om
+            de beschikbaarheid en we nemen binnen 24 uur contact met u op.
+        </p>
+        </div>
+
+        <div>
+            <label place hold for="form"></label>
+            <input class="naam" placeholder="Naam" type="text">
+            <input class="telephone" placeholder="Telefoon nummer" type="text">
+            <input class="date" placeholder="Datum" type="date">
+            <input class="email" placeholder="Email Adrress" type="email">
+
+
+            <div class="droplistContainer">
+                <div class="dropdown">
+                    <input type="text" id="myInput" placeholder="">
+                    <ul id="myDropdown">
+                        <li onclick="selectOption('kies uw pakket')">kies uw pakket</li>
+                        <li onclick="selectOption('Basis formatie')">Basis formatie</li>
+                        <li onclick="selectOption('Middel formatie')">Middel formatie</li>
+                        <li onclick="selectOption('Grote formatie')">Grote formatie</li>
+                    </ul>
+                </div>
+        
+                <div class="dropdown1">
+                    <input type="text" id="myInput1" placeholder="Categorieën">
+                    <ul id="myDropdown1">
+                        <li onclick="selectOption1('Wat voor envenment')">Wat voor envenment</li>
+                        <li onclick="selectOption1('Concert')">Concert</li>
+                        <li onclick="selectOption1('Festival')">Festival</li>
+                        <li onclick="selectOption1('Confenrentie')">Confenrentie</li>
+                        <li onclick="selectOption1('Beurs')">Beurs</li>
+                        <li onclick="selectOption1('Sporteventment')">Sporteventment</li>
+                        <li onclick="selectOption1('Feest')">Feest</li>
+                        <li onclick="selectOption1('Tentoonstelling')">Tentoonstelling</li>
+                        <li onclick="selectOption1('Seminar')">Seminar</li>
+                        <li onclick="selectOption1('Workshop')">Workshop</li>
+                        <li onclick="selectOption1('Galadiner')">Galadiner</li>
+        
+                    </ul>
+                </div>
+            </div>
+            
+            <input class="last" placeholder="Beschrijf hier uw evenement" type="text">
+
+            <div>
+                <button class="buttonClass">VERSTUUR</button>
+            </div>
+    </div>
+    
+</nav>
+   <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <h1>SPECIAL REQUEST</h1>
+            <h3>12+ Muzikanten</h3>
+            <p>De ultieme show, precies zoals jij het wilt! You name it, we make it happen.</p>
+            <button class="lastHeader js-mobile-cta">BOEK&nbsp;NU&nbsp;&#8594;</button>
+            <ul>
+                <li class="sliderLi"><span class="liSpan">&#10004;</span>100% Feest Garantie</li>
+                <li class="sliderLi"><span class="liSpan">&#10004;</span>Niet goed, geld terug</li>
+                <li class="sliderLi"><span class="liSpan">&#10004;</span>Gepersonaliseerde outfits</li>
+                <li class="sliderLi"><span class="liSpan">&#10004;</span>Jouw wensen, onze uitdaging</li>
+                <li class="sliderLi"><span class="liSpan">&#10004;</span>Meerdere sets</li>
+                <li class="sliderLi"><span class="liSpan">&#10004;</span>Samba danseressen</li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> 
+        </div> 
+
+        <div class="swiper-slide">
+            <h1>KLEINE FORMATIE</h1>
+                <h3>4-6 Muzikanten</h3>
+                <p>Uitermate geschikt voor intieme vieringen zoals, bruiloften en verjaardagen.</p>
+                <button class="lastHeader js-mobile-cta">BOEK&nbsp;NU&nbsp;&#8594;</button>
+                
+                <ul>
+                    <li class="sliderLi"><span class="liSpan">&#10004;</span>Feestgarantie zonder twijfel</li>
+                    <li class="sliderLi"><span class="liSpan">&#10004;</span>Gepersonaliseerde outfits</li>
+                    <li class="sliderLi"><span class="liSpan">&#10004;</span>Verzoeknummers</li>
+                    <li class="sliderLi"><span class="liSpan">&#10006;</span>Meerdere sets</li>
+                    <li class="sliderLi"><span class="liSpan">&#10006;</span>Samba Danseressen</li>
                 </ul>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-            </div>
-    
-            <div class="swiper-slide">
-                <h1>SPECIAL REQUEST</h1>
-                <h3>12+ Muzikanten</h3>
-                <p>De ultieme show, precies zoals jij het wilt! You name it, we make it happen.</p>
-                <a href=""><p class="lastHeader">BOEK&nbsp;NU&nbsp;&#8594;</p></a>
-                <ul>
-                    <li><span class="liSpan">&#10004;</span>100% Feest Garantie</li>
-                    <li><span class="liSpan">&#10004;</span>Niet goed, geld terug</li>
-                    <li><span class="liSpan">&#10004;</span>Gepersonaliseerde outfits</li>
-                    <li><span class="liSpan">&#10004;</span>Jouw wensen, onze uitdaging</li>
-                    <li><span class="liSpan">&#10004;</span>Meerdere sets</li>
-                    <li><span class="liSpan">&#10004;</span>Samba danseressen</li>
-                </ul>
-                <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div> 
-            </div> 
         </div>
+
+        <div class="swiper-slide purple">
+            <div class="middleHeader"><p class="pmiddleHeader">75% KIEST VOOR DIT PAKKET</p></div>
+            <h1>MIDDEL FORMATIE</h1>
+            <h3>7-10 Muzikanten</h3>
+            <p>Ideaal voor zakelijke evenementen, <br> Sport-evenementen en bedrijfsfeesten.</p>
+           <button class="lastHeader js-mobile-cta">BOEK&nbsp;NU&nbsp;&#8594;</button>
+                <li class="sliderLi"><span class="liSpan">&#10004;</span>100% Feest Garantie</li>
+                <li class="sliderLi"><span class="liSpan">&#10004;</span>Niet goed, geld terug</li>
+                <li class="sliderLi"><span class="liSpan">&#10004;</span>Gepersonaliseerde outfits</li>
+                <li class="sliderLi"><span class="liSpan">&#10004;</span>Onbegrensde creativiteit</li>
+                <li class="sliderLi"><span class="liSpan">&#10004;</span>Liedjes die jij wilt horen</li>
+                <li class="sliderLi"><span class="liSpan">&#10006;</span>Meerdere sets</li>
+                <li class="sliderLi"><span style="color: green;"  class="liSpan">&#10006;</span>Samba danseressen</li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
        
-    </div>
+
+        
+    </div>  
+</div>
     
     
     <!-- Swiper JS -->
@@ -95,13 +842,82 @@
     
     loop: true,
 
-
   });
+
+  let mobileBtn = document.querySelectorAll(".js-mobile-cta")
+    let nav = document.querySelector('nav')
+    let mobileBtnExit = document.querySelector(".js-mobile-exit")
+
+    for  (let i = 0; i < mobileBtn.length; i++) {
+        mobileBtn[i].addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+    }
+
+    mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+    
+function selectOption(option) {
+    document.getElementById("myInput").value = option;
+    hideDropdown();
+}
+
+function showDropdown() {
+    document.getElementById("myDropdown").style.display = "block";
+}
+
+function hideDropdown() {
+    document.getElementById("myDropdown").style.display = "none";
+}
+
+document.addEventListener("click", function(event) {
+    var dropdown = document.getElementById("myDropdown");
+    var input = document.getElementById("myInput");
+    
+    if (!dropdown.contains(event.target) && event.target !== input) {
+        hideDropdown();
+    }
+});
+
+document.getElementById("myInput").addEventListener("click", function() {
+    showDropdown();
+});
+
+
+function selectOption1(option) {
+    document.getElementById("myInput1").value = option;
+    hideDropdown1();
+}
+
+function showDropdown1() {
+    document.getElementById("myDropdown1").style.display = "block";
+}
+
+function hideDropdown1() {
+    document.getElementById("myDropdown1").style.display = "none";
+}
+
+document.addEventListener("click", function(event) {
+    var dropdown = document.getElementById("myDropdown1");
+    var input = document.getElementById("myInput1");
+    
+    if (!dropdown.contains(event.target) && event.target !== input) {
+        hideDropdown1();
+    }
+});
+
+document.getElementById("myInput1").addEventListener("click", function() {
+    showDropdown1();
+});
 
 
 
 
 
 </script>
+</body>
+</html>
 </body>
 </html>
