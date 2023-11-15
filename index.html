@@ -170,10 +170,45 @@ transform: scale(1)
     li {
         font-size: 10px;
     }
-    .lastHeader {
-        margin-left: 20px;
+
+    .lastHeader{
+        margin-left: 0px;
     }
 }
+
+
+    @media (min-width: 390px) {
+    .swiper-slide {
+        width: 300px;
+    }
+
+
+    li {
+        font-size: 10px;
+    }
+
+    .lastHeader{
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 360px) {
+    .swiper-slide {
+        width: 250px;
+    }
+
+
+    li {
+        font-size: 10px;
+    }
+
+    .lastHeader{
+        margin-left: 0px;
+    }
+}
+
+
+
 
 
 @media (min-width: 700px ) {
@@ -368,66 +403,6 @@ transform: scale(1)
 }
 
 /* The Form Section*/
-.header {
-    height: auto;
-}
-
-.formH2 {
-    font-size: 40px;
-    text-align: center;
-    font-family: 'Playfair Display';
-    font-weight: lighter;
-}
-
-span {
-    display: inline-block;
-}
-
-.formP {
-    font-family: monospace;
-    font-size: 18px;
-    margin-bottom: 30px;
-    font-weight:normal;
-    margin-top: 30px;
-    
-}
-
-input {
-    border: none;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.536);
-    display: block;
-    width: 100%;
-    font-size: 20px;
-    padding: 30px;
-}
-
-.buttonClass {
-    display: inline-block;
-    margin-left: 350px;
-    margin-top: 30px;
-    padding: 25px 80px;
-    color: white;
-    background-color: #32C9D6;
-    font-size: 20px;
-    font-family: 'Times New Roman';
-    cursor: pointer;
-}
-
-input::placeholder {
-    font-weight: lighter;
-    font-size: 20px;
-    font-family: 'Lato', sans-serif;
-}
-
-.exit-button {
-    cursor: pointer;
-    background-color: none;
-    font-size: 40px;
-    border: none;
-    background-color: white;
-    
-}
-
 
 nav {
     display: none;
@@ -451,6 +426,69 @@ position: fixed;
   margin: none;
 }
 
+.header {
+    margin-top: 60px;
+    margin-left: 30px;
+    height: 800px;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -40px;
+}
+
+.formH2 {
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: lighter;
+}
+
+.exit-button {
+    cursor: pointer;
+    background-color: none;
+    height: 40px;
+    border: none;
+    background-color: white;
+    margin-right: 50px;
+}
+
+.formP {
+    font-family: monospace;
+    font-size: 12px;
+    margin-bottom: 30px;
+    font-weight:normal;
+    margin-top: 30px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid rgba(164, 161, 161, 0.536);
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+}
+
+input::placeholder {
+    font-weight: lighter;
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.buttonClass {
+     display: inline-block;
+     margin-left: 350px;
+     margin-top: 30px;
+     padding: 25px 50px;
+     color: white;
+     background-color: #32C9D6;
+     font-size: 20px;
+     font-family: 'Times New Roman';
+     cursor: pointer;
+     border: 1px solid black;
+ }
 .dropdown {
     position: relative;
     display: block;
@@ -461,33 +499,32 @@ position: fixed;
 }
 
 #myInput {
-    padding: 20px;
+    padding: 5px;
     width: 650px;
     border: none;
     border-bottom: 1px solid #ccc;
     cursor: pointer;
-}
+    }
 
-#myDropdown {
-    position: absolute;
-    border: none;
-    z-index: 1;
-    display: none;
-    list-style: none;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    margin: 0;
-    padding: 0;
-    font-size: 10px;
-}
+    #myDropdown {
+        position: absolute;
+        border: none;
+        z-index: 1;
+        display: none;
+        list-style: none;
+        background-color: #fff;
+        border-bottom: 1px solid #ccc;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+    }
 
-#myDropdown li {
-    padding: 5px;
-    height: 100%;
-    width: 650px;
-    font-size: 20px;
-    
-}
+    #myDropdown li {
+        padding: 5px;
+        height: 100%;
+        width: 650px;
+        font-size: 20px;  
+    }
 
 #myDropdown li:hover {
     background-color: blue;
@@ -503,12 +540,13 @@ position: fixed;
 }
 
 #myInput1 {
-    padding: 25px;
-    width: 650px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    cursor: pointer;
-}
+        padding: 5px;
+        width: 650px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        cursor: pointer;
+        margin-left: 0px;
+    }
 
 #myDropdown1 {
     position: absolute;
@@ -537,8 +575,9 @@ position: fixed;
 }
 
 .last {
-    margin-top: -30px;
-}
+    padding: 2px;
+    width: 650px;
+    }
 
 @media only screen and (min-width: 800px) {
 
@@ -618,6 +657,14 @@ input {
 .last {
    width: 950px
 }
+
+}
+
+@media (min-width: 414px) {
+    .exit-button{
+        margin-top: -50px
+    }
+
 
 }
 
@@ -714,7 +761,10 @@ input {
 
 <nav class="header">
     <div class="container">
-        <h2 class="formH2">Boekings Formulier &nbsp; &nbsp; &nbsp; &nbsp; <button class="exit-button js-mobile-exit"><span>&#128473;</span></button>
+        <div class="nav">
+            <h2 class="formH2">Boekings Formulier</h2>
+            <img class="exit-button js-mobile-exit" src="./download (1).png" alt="">
+        </div>
         <p class="formP">
             Vul het onderstaande formulier in om
             de beschikbaarheid en we nemen binnen 24 uur contact met u op.
@@ -723,10 +773,12 @@ input {
 
         <div>
             <label place hold for="form"></label>
-            <input class="naam" placeholder="Naam" type="text">
-            <input class="telephone" placeholder="Telefoon nummer" type="text">
-            <input class="date" placeholder="Datum" type="date">
-            <input class="email" placeholder="Email Adrress" type="email">
+            <div class="inputContainer">
+                <input class="naam" placeholder="Naam" type="text">
+                <input class="telephone" placeholder="Telefoon nummer" type="text">
+                <input class="date" placeholder="Datum" type="date">
+                <input class="email" placeholder="Email Adrress" type="email">
+            </div>
 
 
             <div class="droplistContainer">
@@ -741,7 +793,7 @@ input {
                 </div>
         
                 <div class="dropdown1">
-                    <input type="text" id="myInput1" placeholder="Categorieën">
+                    <input type="text" id="myInput1" placeholder="">
                     <ul id="myDropdown1">
                         <li onclick="selectOption1('Wat voor envenment')">Wat voor envenment</li>
                         <li onclick="selectOption1('Concert')">Concert</li>
@@ -767,6 +819,7 @@ input {
     </div>
     
 </nav>
+
    <div class="swiper mySwiper">
     <div class="swiper-wrapper">
 
